@@ -1,0 +1,85 @@
+@font-face {
+font-family: "Movement";
+font-style: normal;
+font-weight: 400;
+src: url('font/Movement/Movement-DirectThin.woff');
+}
+
+
+
+#letter {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-auto-rows: 200px ;
+  grid-gap: 10px;
+  clear : left;
+  font-family: "Movement";
+  margin: 20px 100px;
+}
+
+.filter_link {
+  display: block;
+  float: left;
+  width: 33.33333333%;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px 0;
+  background-color: black;
+  color: white;
+  font-family: "Movement";
+  margin-bottom: 10px;
+}
+
+
+
+div{
+ transition:all .5s linear;
+ text-align: center;
+ padding: 2vw;
+}
+
+h1{
+font-weight: 700;
+font-size: 6rem;
+}
+
+p{
+font-size: 1rem;
+margin-top: 2vw;
+}
+
+
+a:focus[data-filter]{
+    opacity:.8;
+    outline:none;
+}
+
+
+
+div[data-filter="fruit"]{
+  background:#000000;
+  color:#FFFFFF;
+}
+
+div[data-filter="legume"]{
+  background:#FFFFFF;
+  border: 1px solid #000000;
+}
+
+a[data-filter="fruit"]:focus ~ #letter div:not([data-filter="fruit"]){
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+
+}
+
+a[data-filter="legume"]:focus ~ #letter div:not([data-filter="legume"]){
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+
+}
