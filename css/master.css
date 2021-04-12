@@ -28,13 +28,20 @@ h2 {
 
 #letter {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  grid-auto-rows: 150px ;
-  grid-gap: 50px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: 200px ;
+  grid-gap: 20px;
   clear : left;
   font-family: "Movement";
-  margin: 20px 100px;
+  margin: 20px 50px;
 
+}
+
+
+.boutons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .filter_link {
@@ -47,15 +54,15 @@ h2 {
   background-color: #D5CB9E;
   color: #4A4040;
   font-family: "Movement";
-  margin-bottom: 10px;
-}
+  margin-bottom: 20px;
 
+}
 
 
 div{
  transition:all .5s linear;
  text-align: center;
- padding: 2vw;
+ padding: 3vw;
 }
 
 h3{
@@ -77,16 +84,26 @@ a:focus[data-filter]{
 
 
 div[data-filter="fruit"]{
-  background: #D77A61;
+  background: #D5CB9E;
   color:#4A4040;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
-div[data-filter="legume"]{
-  background:#E3B39C;
-  color:#4A4040;
-  border-radius: 10px;
 
+div:hover[data-filter="fruit"]{
+  background: #D77A61;
+}
+
+
+div[data-filter="legume"]{
+  background:#D5CB9E;
+  color:#4A4040;
+  border-radius: 5px;
+
+}
+
+div:hover[data-filter="legume"]{
+  background:#E3B39C;
 }
 
 a[data-filter="fruit"]:focus ~ #letter div:not([data-filter="fruit"]){
