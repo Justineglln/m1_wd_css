@@ -2,17 +2,17 @@
 font-family: "Movement";
 font-style: normal;
 font-weight: 400;
-src: url('/font/Movement/Movement-IndirectBlack.woff');
+src: url('/font/Movement/Movement-DirectThin.woff');
 }
 
 body {
-  background-color: #EFEBD7;
+  background-color: #191818;
 }
 
 h1 {
   font-family: "Movement";
   text-align: center;
-  color: #4A4040;
+  color: #ECFFB0;
   font-size: 1rem;
   padding-top: 4vw;
   padding-bottom: 2vw;
@@ -21,7 +21,7 @@ h1 {
 h2 {
   font-family: "Movement";
   text-align: center;
-  color: #4A4040;
+  color: #FFFFFF;
   font-size: 4rem;
   margin-bottom: 8vw;
 }
@@ -31,22 +31,24 @@ section {
   align-items: center;
   justify-content: center;
 }
+
 a {
   font-family: "Movement";
   text-align: center;
   text-decoration: none;
-  color: #D5CB9E;
+  color: #191818;
   font-size: 0.75rem;
   padding: 1vw;
-  background-color: #4A4040;
+  background-color: #ECFFB0;
   border-radius: 50px;
   width: 10vw;
+  font-weight: 700;
 }
 
 a:hover {
-  color: #4A4040;
+  color: #191818;
   text-decoration: underline;
-  background-color: #FF6B6B;
+  background-color: #E5D0E3;
 }
 
 .animated-box{

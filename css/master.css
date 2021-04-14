@@ -2,7 +2,7 @@
 font-family: "Movement";
 font-style: normal;
 font-weight: 400;
-src: url('/font/Movement/Movement-IndirectBlack.woff');
+src: url('/font/Movement/Movement-DirectThin.woff');
 }
 
 body {
@@ -20,6 +20,7 @@ h1 {
 
 h2 {
   font-family: "Movement";
+  font-weight: 700;
   text-align: center;
   color: #FFFFFF;
   font-size: 3rem;
@@ -136,6 +137,20 @@ margin-top: 0.75vw;
   background-image: url(../photos/haricot.jpg);
   background-repeat: no-repeat;
   border-radius: 5px;
+
+}
+.icaque {
+  background-image: url(../photos/icaque.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
+}
+
+.jacque {
+  background-image: url(../photos/jacque.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
 }
 
 .kiwi {
@@ -164,6 +179,23 @@ margin-top: 0.75vw;
   border-radius: 5px;
 }
 
+.orange {
+  background-image: url(../photos/orange.jpg);
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+
+.pamplemouse {
+  background-image: url(../photos/pamplemouse.jpg);
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+
+.quetsche {
+  background-image: url(../photos/quetsche.jpg);
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
 .raisin {
   background-image: url(../photos/raisin.jpg);
   background-repeat: no-repeat;
@@ -179,6 +211,43 @@ margin-top: 0.75vw;
 
 .tomate {
   background-image: url(../photos/tomate.jpg);
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+
+.ugli {
+  background-image: url(../photos/ugli.jpg);
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+
+.vitelotte {
+  background-image: url(../photos/vitelotte.jpg);
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+
+.yuzu {
+  background-image: url(../photos/yuzu.jpg);
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+
+.wasabi {
+  background-image: url(../photos/wasabi.jpg);
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+
+.ximenia {
+  background-image: url(../photos/wasabi.jpg);
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+
+
+.zatte {
+  background-image: url(../photos/zatte.jpg);
   background-repeat: no-repeat;
   border-radius: 5px;
 }
@@ -212,6 +281,15 @@ a:focus[data-filter]{
 }
 
 a[data-filter="fruit"]:focus ~ #letter div:not([data-filter="fruit"]){
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+
+}
+
+input[value="fruit"]:checked ~ #letter div:not([data-filter="fruit"]){
   width:0;
   height:0;
   padding:0;
