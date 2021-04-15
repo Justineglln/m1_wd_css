@@ -3,20 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>Accueil</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/master.css">
   </head>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/master.css">
 
   <body>
 
+<div id="progress"></div>
+
 <h1>abécédaire</h1>
 <h2>Les fruits <br>& les légumes</h2>
+<main>
 
-<section class="boutons">
-  <a class="filter_link" href="#" data-filter="all" tabindex="-1">all</a>
-  <a class="filter_link" href="#" data-filter="fruit" tabindex="-1">fruits</a>
-  <a class="filter_link" href="#" data-filter="legume" tabindex="-1">legumes</a>
-</section>
+  <a class="filter_link" href="#" data-filter="all" tabindex="-1"><span>all</span></a>
+  <a class="filter_link" href="#" data-filter="fruit" tabindex="-1"><span>fruits</span></a>
+  <a class="filter_link" href="#" data-filter="legume" tabindex="-1"><span>legumes</span></a>
+
+
 
 
     <section id="letter">
@@ -84,7 +87,7 @@
         <h3>p</h3>
         <p>Pamplemouse</p>
       </div>
-      <div class="quetsche"data-filter="fruit">
+      <div class="quetsche" data-filter="fruit">
         <h3>q</h3>
         <p>Quetsche</p>
       </div>
@@ -124,10 +127,9 @@
         <h3>Z</h3>
         <p>Zatte</p>
       </div>
-
-
-
-
     </section>
+
+    </main>
+
   </body>
 </html>
