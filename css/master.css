@@ -8,8 +8,8 @@ src: url('/font/Movement/Movement-DirectThin.woff');
 body {
   background-color: #191818;
 }
-
-h1 {
+/* Début header */
+.header h1 {
   font-family: "Movement";
   text-align: center;
   color: #ECFFB0;
@@ -18,7 +18,7 @@ h1 {
   padding-bottom: 1vw;
 }
 
-h2 {
+.header h2 {
   font-family: "Movement";
   font-weight: 700;
   text-align: center;
@@ -26,7 +26,9 @@ h2 {
   font-size: 3rem;
   margin-bottom: 3vw;
 }
+/* Fin header */
 
+/* Grid */
 #letter {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -38,9 +40,11 @@ h2 {
   flex-basis: 1200px;
 }
 
+/* Filter */
 main {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 @media screen and (max-width: 640px){
@@ -85,7 +89,6 @@ main {
     border-radius: 50px;
 }
 
-
 .filter_link[data-filter="fruit"] span {
   background-color: #ECFFB0;
   width: 10vw;
@@ -100,23 +103,24 @@ main {
   border-radius: 50px;
 }
 
-div{
-/* transition:all .5s linear; */
+/* Début design des blocs de lettres */
+main div{
  text-align: center;
  padding: 5vw;
 }
 
-h3{
+main h3{
 font-weight: 700;
 font-size: 5rem;
 }
 
-p{
+main p{
 font-size: 0.75rem;
 margin-top: 0.75vw;
 }
+/* Fin design des blocs de lettres */
 
-
+/* Début images de chaque lettre */
 .avocat {
   background-image: url(../photos/avocat.jpg);
   background-repeat: no-repeat;
@@ -163,8 +167,8 @@ margin-top: 0.75vw;
   background-image: url(../photos/haricot.jpg);
   background-repeat: no-repeat;
   border-radius: 5px;
-
 }
+
 .icaque {
   background-image: url(../photos/icaque.jpg);
   background-repeat: no-repeat;
@@ -222,6 +226,7 @@ margin-top: 0.75vw;
   background-repeat: no-repeat;
   border-radius: 5px;
 }
+
 .raisin {
   background-image: url(../photos/raisin.jpg);
   background-repeat: no-repeat;
@@ -271,13 +276,14 @@ margin-top: 0.75vw;
   border-radius: 5px;
 }
 
-
 .zatte {
   background-image: url(../photos/zatte.jpg);
   background-repeat: no-repeat;
   border-radius: 5px;
 }
+/* Début images de chaque lettre */
 
+/* Début couleur des lettres survoles */
 div[data-filter="fruit"]{
   color:#ffffff;
   border-radius: 5px;
@@ -288,22 +294,22 @@ div:hover[data-filter="fruit"]{
   color: #191818;
 }
 
-
 div[data-filter="legume"]{
   color:#ffffff;
   border-radius: 5px;
-
 }
 
 div:hover[data-filter="legume"]{
   background: #E5D0E3;
-    color: #191818;
+  color: #191818;
 }
+/* Début couleur des lettres survoles */
 
 
+/* Début filter */
 a:focus[data-filter]{
-    opacity:.8;
-    outline:none;
+  opacity:.8;
+  outline:none;
 }
 
 a[data-filter="fruit"]:focus ~ #letter div:not([data-filter="fruit"]){
@@ -312,7 +318,6 @@ a[data-filter="fruit"]:focus ~ #letter div:not([data-filter="fruit"]){
   padding:0;
   margin:0;
   opacity:0;
-
 }
 
 input[value="fruit"]:checked ~ #letter div:not([data-filter="fruit"]){
@@ -321,7 +326,6 @@ input[value="fruit"]:checked ~ #letter div:not([data-filter="fruit"]){
   padding:0;
   margin:0;
   opacity:0;
-
 }
 
 a[data-filter="legume"]:focus ~ #letter div:not([data-filter="legume"]){
@@ -330,9 +334,10 @@ a[data-filter="legume"]:focus ~ #letter div:not([data-filter="legume"]){
   padding:0;
   margin:0;
   opacity:0;
-
 }
+/* Fin filter */
 
+/* début barre de progession */
 #progress {
   padding: 0;
   position: fixed;
@@ -346,7 +351,6 @@ a[data-filter="legume"]:focus ~ #letter div:not([data-filter="legume"]){
   background: #ECFFB0;
 }
 
-
 @keyframes adjust-progressbar {
   0% {
   transform: scaleX(0);
@@ -356,16 +360,199 @@ a[data-filter="legume"]:focus ~ #letter div:not([data-filter="legume"]){
   transform: scaleX(1);
     background: #E5D0E3;
   }
-
 }
 
 @scroll-timeline progressbar-timeline {
   time-range: 1s;
 }
 
-
 #progress {
    animation-name: adjust-progressbar;
    animation-duration: 1s;
    animation-timeline : progressbar-timeline;
 }
+/* fin barre de progession */
+
+/* Début Footer*/
+
+.footer {
+  font-family: "Raleway";
+  padding: 20px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+/* Fin Footer*/
+
+/* Debut page coktail*/
+
+.header-container {
+  color: #fff;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.header-lettre {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.titre {
+  font-family: "Movement";
+}
+
+.retour a, .suivant a{
+  font-family: "Movement";
+  font-weight: lighter;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.75rem;
+}
+
+.retour a:hover, .suivant a:hover {
+  text-decoration: underline;
+}
+
+.body-container {
+  color: #fff;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.body-lettre {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.images-cocktail {
+  margin-right: 50px;
+}
+
+.texte-cocktail h1 {
+  font-family: "Movement";
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+
+.texte-cocktail h2 {
+  font-family: "Movement";
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 40px 0px 20px 0;
+}
+
+.texte-cocktail p {
+  font-family: "Raleway";
+  font-weight: lighter;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+}
+
+.preparation {
+  display: flex;
+}
+
+.numero-texte{
+  font-family: "Raleway";
+  font-weight: lighter;
+  font-size: 0.75rem;
+  margin: 5px 0 0 0;
+}
+
+
+.numero h6 {
+  font-family: "Movement";
+  font-weight: bold;
+  font-size: 1rem;
+  border: 1px solid #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  text-align: center;
+  margin: 5px 5px 0 0;
+}
+/* Fin page coktail*/
+
+
+/* Debut Loading page*/
+.loading-titre1 {
+  font-family: "Movement";
+  text-align: center;
+  color: #ECFFB0;
+  font-size: 1rem;
+  padding-top: 4vw;
+  padding-bottom: 2vw;
+}
+
+.loading-titre2 {
+  font-family: "Movement";
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 4rem;
+  margin-bottom: 8vw;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bouton-container {
+  display: flex;
+  justify-content: center;
+}
+
+.bouton-loading {
+  font-family: "Movement";
+  text-align: center;
+  text-decoration: none;
+  color: #191818;
+  font-size: 0.75rem;
+  padding: 1vw;
+  background-color: #ECFFB0;
+  border-radius: 50px;
+  width: 10vw;
+  font-weight: 700;
+}
+
+.bouton-loading:hover {
+  color: #191818;
+  text-decoration: underline;
+  background-color: #E5D0E3;
+}
+
+.animated-box{
+  background-color:#4A4040;
+  width: 1em;
+  height: 1em;
+  margin-bottom: 10vw;
+  animation-duration: 3s;
+  animation-name: appearIn;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+}
+@keyframes appearIn{
+  0% {
+    transition: all 1s ease;
+    transform: scale(1);
+    opacity: 1;
+  }
+  60% {
+    transform: scale(1.2) translateX(400px);
+    border-radius: 300px;
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1)translateX(800px) rotate(45deg);
+    border-radius: 0%;
+
+  }
+}
+
+/* Fin Loading page*/
