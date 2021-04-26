@@ -40,7 +40,7 @@ body {
   flex-basis: 1200px;
 }
 
-/* Filter */
+/* Début Filter */
 main {
   display: flex;
   flex-wrap: wrap;
@@ -102,6 +102,7 @@ main {
   display: block;
   border-radius: 50px;
 }
+/* Filter */
 
 /* Début design des blocs de lettres */
 main div{
@@ -258,12 +259,6 @@ margin-top: 0.75vw;
   border-radius: 5px;
 }
 
-.yuzu {
-  background-image: url(../photos/yuzu.jpg);
-  background-repeat: no-repeat;
-  border-radius: 5px;
-}
-
 .wasabi {
   background-image: url(../photos/wasabi.jpg);
   background-repeat: no-repeat;
@@ -272,6 +267,12 @@ margin-top: 0.75vw;
 
 .ximenia {
   background-image: url(../photos/ximenia.jpg);
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+
+.yuzu {
+  background-image: url(../photos/yuzu.jpg);
   background-repeat: no-repeat;
   border-radius: 5px;
 }
@@ -461,6 +462,7 @@ a[data-filter="legume"]:focus ~ #letter div:not([data-filter="legume"]){
   font-weight: lighter;
   font-size: 0.75rem;
   margin: 5px 0 0 0;
+  line-height: 1rem;
 }
 
 
