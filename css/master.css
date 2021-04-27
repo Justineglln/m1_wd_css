@@ -26,6 +26,17 @@ body {
   font-size: 3rem;
   margin-bottom: 3vw;
 }
+
+.introduction p {
+  font-family: "Movement";
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1rem;
+  margin-bottom: 3vw;
+  line-height: 1.5rem;
+
+}
 /* Fin header */
 
 /* Grid */
@@ -119,6 +130,17 @@ main p{
 font-size: 0.75rem;
 margin-top: 0.75vw;
 }
+
+#letter a {
+  text-decoration: none;
+  color: white
+}
+
+#letter a:hover {
+  text-decoration: none;
+  color: black
+}
+
 /* Fin design des blocs de lettres */
 
 /* Début images de chaque lettre */
@@ -146,8 +168,8 @@ margin-top: 0.75vw;
   border-radius: 5px;
 }
 
-.endive {
-  background-image: url(../photos/endive.jpg);
+.epinard {
+  background-image: url(../photos/epinard.jpg);
   background-repeat: no-repeat;
   border-radius: 5px;
 }
@@ -164,8 +186,8 @@ margin-top: 0.75vw;
   border-radius: 5px;
 }
 
-.haricot {
-  background-image: url(../photos/haricot.jpg);
+.hernandia {
+  background-image: url(../photos/hernandia.jpg);
   background-repeat: no-repeat;
   border-radius: 5px;
 }
@@ -197,14 +219,14 @@ margin-top: 0.75vw;
   border-radius: 5px;
 }
 
-.mais {
-  background-image: url(../photos/mais.jpg);
+.mangue {
+  background-image: url(../photos/mangue.jpg);
   background-repeat: no-repeat;
   border-radius: 5px;
 }
 
-.navet {
-  background-image: url(../photos/navet.jpg);
+.noix {
+  background-image: url(../photos/noix.jpg);
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 5px;
@@ -234,8 +256,8 @@ margin-top: 0.75vw;
   border-radius: 5px;
 }
 
-.salade {
-  background-image: url(../photos/salade.jpg);
+.soja {
+  background-image: url(../photos/soja.jpg);
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 5px;
@@ -253,8 +275,8 @@ margin-top: 0.75vw;
   border-radius: 5px;
 }
 
-.vitelotte {
-  background-image: url(../photos/vitelotte.jpg);
+.vanille {
+  background-image: url(../photos/vanille.jpg);
   background-repeat: no-repeat;
   border-radius: 5px;
 }
@@ -420,12 +442,14 @@ a[data-filter="legume"]:focus ~ #letter div:not([data-filter="legume"]){
   color: #fff;
   display: flex;
   justify-content: flex-start;
+  /* width: 100% */
 }
 
 .body-lettre {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* width: 100% */
 }
 
 .images-cocktail {
@@ -442,40 +466,68 @@ a[data-filter="legume"]:focus ~ #letter div:not([data-filter="legume"]){
 .texte-cocktail h2 {
   font-family: "Movement";
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin: 40px 0px 20px 0;
 }
 
 .texte-cocktail p {
   font-family: "Raleway";
   font-weight: lighter;
-  font-size: 0.75rem;
-  line-height: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.4rem;
 }
 
-.preparation {
-  display: flex;
+ul {
+  max-width: 350px;
+  padding-left: 20px;
+  list-style-type: disc;
 }
 
-.numero-texte{
+ul li {
   font-family: "Raleway";
   font-weight: lighter;
-  font-size: 0.75rem;
-  margin: 5px 0 0 0;
-  line-height: 1rem;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  position: relative;
+    margin: 0 0 0.5rem 0;
 }
 
 
-.numero h6 {
+ol {
+  max-width: 350px;
+  counter-reset: my-awesome-counter;
+  list-style: none;
+  padding-left: 40px;
+}
+
+ol li {
+  font-family: "Raleway";
+  font-weight: lighter;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  margin: 0 0 2rem 0;
+  counter-increment: my-awesome-counter;
+  position: relative;
+}
+
+ol li::before {
   font-family: "Movement";
   font-weight: bold;
+  content: counter(my-awesome-counter);
+  color: #ffffff;
   font-size: 1rem;
+  font-weight: bold;
+  position: absolute;
+  --size: 32px;
+  left: calc(-1 * var(--size) - 10px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
   border: 1px solid #fff;
-  width: 30px;
-  height: 30px;
-  border-radius: 50px;
+  border-radius: 50%;
   text-align: center;
-  margin: 5px 5px 0 0;
+  margin: 0 0 2rem 0;
 }
 /* Fin page coktail*/
 
