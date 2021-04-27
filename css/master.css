@@ -424,9 +424,18 @@ a[data-filter="legume"]:focus ~ #letter div:not([data-filter="legume"]){
 
 .titre {
   font-family: "Movement";
+  font-size: 1rem;
 }
 
-.retour a, .suivant a{
+.titre a {
+  font-family: "Movement";
+  font-weight: lighter;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.retour a, .suivant a {
   font-family: "Movement";
   font-weight: lighter;
   text-decoration: none;
@@ -608,5 +617,4 @@ section {
 
   }
 }
-
 /* Fin Loading page*/
