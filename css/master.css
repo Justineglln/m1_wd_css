@@ -5,14 +5,24 @@ font-weight: 400;
 src: url('/font/Movement/Movement-DirectThin.woff');
 }
 
-body {
-  background-color: #191818;
+:root{
+--main-color: #191818;
+--fruit-color: #ECFFB0;
+--legume-color: #E5D0E3;
+--other-color: #FFFFFF;
+--main-typo: 1rem;
+
 }
+
+body {
+  background: var(--main-color);
+}
+
 /* Début header */
 .header h1 {
   font-family: "Movement";
   text-align: center;
-  color: #ECFFB0;
+  color: var(--fruit-color);
   font-size: 0.75rem;
   padding-top: 2vw;
   padding-bottom: 1vw;
@@ -22,7 +32,7 @@ body {
   font-family: "Movement";
   font-weight: 700;
   text-align: center;
-  color: #FFFFFF;
+  color: var(--other-color);
   font-size: 3rem;
   margin-bottom: 3vw;
 }
@@ -31,8 +41,8 @@ body {
   font-family: "Movement";
   font-weight: 700;
   text-align: center;
-  color: #ffffff;
-  font-size: 1rem;
+  color: var(--other-color);
+  font-size: var(--main-typo);
   margin-bottom: 3vw;
   line-height: 1.5rem;
 
@@ -49,6 +59,9 @@ body {
   font-family: "Movement";
   margin: 0 auto;
   flex-basis: 1200px;
+  background-repeat: no-repeat;
+  border-radius: 5%;
+  background-position: center;
 }
 
 /* Début Filter */
@@ -76,39 +89,39 @@ main {
 }
 
 .filter_link[data-filter="all"]{
-  color: #191818;
+  color: var(--main-color);
   display: flex;
   justify-content: center;
 }
 
 .filter_link[data-filter="fruit"]{
-  color: #191818;
+  color: var(--main-color);
   display: flex;
   justify-content: center;
 }
 
 .filter_link[data-filter="legume"]{
-  color: #191818;
+  color: var(--main-color);
   display: flex;
   justify-content: center;
 }
 
 .filter_link[data-filter="all"] span {
-    background-color: #ffffff;
+    background-color: var(--other-color);
     width: 10vw;
     display: block;
     border-radius: 50px;
 }
 
 .filter_link[data-filter="fruit"] span {
-  background-color: #ECFFB0;
+  background-color: var(--fruit-color);
   width: 10vw;
   display: block;
   border-radius: 50px;
 }
 
 .filter_link[data-filter="legume"] span {
-  background-color: #E5D0E3;
+  background-color: var(--legume-color);
   width: 10vw;
   display: block;
   border-radius: 50px;
@@ -133,12 +146,12 @@ margin-top: 0.75vw;
 
 #letter a {
   text-decoration: none;
-  color: white
+  color: var(--other-color);
 }
 
 #letter a:hover {
   text-decoration: none;
-  color: black
+  color: var(--main-color);
 }
 
 /* Fin design des blocs de lettres */
@@ -146,185 +159,129 @@ margin-top: 0.75vw;
 /* Début images de chaque lettre */
 .avocat {
   background-image: url(../photos/avocat.jpg);
-  background-repeat: no-repeat;
-  border-radius: 5px;
 }
 
 .banane {
   background-image: url(../photos/banane.jpg);
-  background-repeat: no-repeat;
-  border-radius: 5px;
 }
 
 .concombre {
   background-image: url(../photos/concombre.jpg);
-  background-repeat: no-repeat;
-  border-radius: 5px;
 }
 
 .datte {
   background-image: url(../photos/datte.jpg);
-  background-repeat: no-repeat;
-  border-radius: 5px;
 }
 
 .epinard {
   background-image: url(../photos/epinard.jpg);
-  background-repeat: no-repeat;
-  border-radius: 5px;
 }
 
 .fraise {
   background-image: url(../photos/fraise.jpg);
-  background-repeat: no-repeat;
-  border-radius: 5px;
 }
 
 .grenade {
   background-image: url(../photos/grenade.jpg);
-  background-repeat: no-repeat;
-  border-radius: 5px;
 }
 
 .hernandia {
   background-image: url(../photos/hernandia.jpg);
-  background-repeat: no-repeat;
-  border-radius: 5px;
 }
 
 .icaque {
   background-image: url(../photos/icaque.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 5px;
 }
 
 .jacque {
   background-image: url(../photos/jacque.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 5px;
 }
 
 .kiwi {
   background-image: url(../photos/kiwi.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 5px;
 }
 
 .litchi {
   background-image: url(../photos/litchi.jpg);
-  background-repeat: no-repeat;
-  border-radius: 5px;
 }
 
 .mangue {
   background-image: url(../photos/mangue.jpg);
-  background-repeat: no-repeat;
-  border-radius: 5px;
+
 }
 
 .noix {
   background-image: url(../photos/noix.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 5px;
 }
 
 .orange {
   background-image: url(../photos/orange.jpg);
-  background-repeat: no-repeat;
-  border-radius: 5px;
 }
 
 .pamplemouse {
   background-image: url(../photos/pamplemouse.jpg);
-  background-repeat: no-repeat;
-  border-radius: 5px;
 }
 
 .quetsche {
   background-image: url(../photos/quetsche.jpg);
-  background-repeat: no-repeat;
-  border-radius: 5px;
 }
 
 .raisin {
   background-image: url(../photos/raisin.jpg);
-  background-repeat: no-repeat;
-  border-radius: 5px;
 }
 
 .soja {
   background-image: url(../photos/soja.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 5px;
 }
 
 .tomate {
   background-image: url(../photos/tomate.jpg);
-  background-repeat: no-repeat;
-  border-radius: 5px;
 }
 
 .ugli {
   background-image: url(../photos/ugli.jpg);
-  background-repeat: no-repeat;
-  border-radius: 5px;
 }
 
 .vanille {
   background-image: url(../photos/vanille.jpg);
-  background-repeat: no-repeat;
-  border-radius: 5px;
 }
 
 .wasabi {
   background-image: url(../photos/wasabi.jpg);
-  background-repeat: no-repeat;
-  border-radius: 5px;
 }
 
 .ximenia {
   background-image: url(../photos/ximenia.jpg);
-  background-repeat: no-repeat;
-  border-radius: 5px;
 }
 
 .yuzu {
   background-image: url(../photos/yuzu.jpg);
-  background-repeat: no-repeat;
-  border-radius: 5px;
 }
 
 .zatte {
   background-image: url(../photos/zatte.jpg);
-  background-repeat: no-repeat;
-  border-radius: 5px;
 }
-/* Début images de chaque lettre */
+/* Fin images de chaque lettre */
 
 /* Début couleur des lettres survoles */
 div[data-filter="fruit"]{
-  color:#ffffff;
+  color: var(--other-color);
   border-radius: 5px;
 }
 
 div:hover[data-filter="fruit"]{
-  background: #ECFFB0;
-  color: #191818;
+  background: var(--fruit-color);
+  color: var(--main-color);
 }
 
 div[data-filter="legume"]{
-  color:#ffffff;
+  color: var(--other-color);
   border-radius: 5px;
 }
 
 div:hover[data-filter="legume"]{
-  background: #E5D0E3;
-  color: #191818;
+  background: var(--legume-color);
+  color: var(--main-color);
 }
 /* Début couleur des lettres survoles */
 
@@ -371,17 +328,17 @@ a[data-filter="legume"]:focus ~ #letter div:not([data-filter="legume"]){
   height: 2vh;
   transform-origin: 0 50%;
   transform: scaleX(0);
-  background: #ECFFB0;
+  background: var(--fruit-color);
 }
 
 @keyframes adjust-progressbar {
   0% {
   transform: scaleX(0);
-    background: #ECFFB0;
+  background: var(--fruit-color);
   }
   100% {
   transform: scaleX(1);
-    background: #E5D0E3;
+    background: var(--legume-color);
   }
 }
 
@@ -399,18 +356,45 @@ a[data-filter="legume"]:focus ~ #letter div:not([data-filter="legume"]){
 /* Début Footer*/
 
 .footer {
-  font-family: "Raleway";
+  font-family: "Movement";
   padding: 20px;
-  color: #ffffff;
+  color: var(--other-color);
   display: flex;
   justify-content: center;
+}
+
+/* Défilement de droite à gauche */
+.marquee-rtl {
+  overflow: hidden; /* important */
+  width:100%;
+}
+.marquee-rtl > div {
+  display: inline-block; /* important */
+  white-space: nowrap; /* important */
+  animation: defilement-rtl 10s infinite linear; /* défilement */
+  cursor: pointer;
+  padding: 10px 2em 10px 100%;
+}
+.marquee-rtl:hover > div {
+  animation-play-state: paused; /* met en pause le défilement */
+}
+
+@keyframes defilement-rtl {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  100% {
+    -webkit-transform: translate(-100%);
+    transform: translate(-100%);
+  }
 }
 /* Fin Footer*/
 
 /* Debut page coktail*/
 
 .header-container {
-  color: #fff;
+  color: var(--other-color);
   padding: 20px 0;
   display: flex;
   justify-content: center;
@@ -424,22 +408,22 @@ a[data-filter="legume"]:focus ~ #letter div:not([data-filter="legume"]){
 
 .titre {
   font-family: "Movement";
-  font-size: 1rem;
+  font-size: var(--main-typo);
 }
 
 .titre a {
   font-family: "Movement";
   font-weight: lighter;
   text-decoration: none;
-  color: #fff;
-  font-size: 1rem;
+  color: var(--other-color);
+  font-size: var(--main-typo);
 }
 
 .retour a, .suivant a {
   font-family: "Movement";
   font-weight: lighter;
   text-decoration: none;
-  color: #fff;
+  color: var(--other-color);
   font-size: 0.75rem;
 }
 
@@ -448,7 +432,7 @@ a[data-filter="legume"]:focus ~ #letter div:not([data-filter="legume"]){
 }
 
 .body-container {
-  color: #fff;
+  color: var(--other-color);
   display: flex;
   justify-content: flex-start;
   /* width: 100% */
@@ -463,6 +447,7 @@ a[data-filter="legume"]:focus ~ #letter div:not([data-filter="legume"]){
 
 .images-cocktail {
   margin-right: 50px;
+  /* position: fixed; */
 }
 
 .texte-cocktail h1 {
@@ -482,7 +467,7 @@ a[data-filter="legume"]:focus ~ #letter div:not([data-filter="legume"]){
 .texte-cocktail p {
   font-family: "Raleway";
   font-weight: lighter;
-  font-size: 1rem;
+  font-size: var(--main-typo);
   line-height: 1.4rem;
 }
 
@@ -495,7 +480,7 @@ ul {
 ul li {
   font-family: "Raleway";
   font-weight: lighter;
-  font-size: 1rem;
+  font-size: var(--main-typo);
   line-height: 1.4rem;
   position: relative;
     margin: 0 0 0.5rem 0;
@@ -512,7 +497,7 @@ ol {
 ol li {
   font-family: "Raleway";
   font-weight: lighter;
-  font-size: 1rem;
+  font-size: var(--main-typo);
   line-height: 1.4rem;
   margin: 0 0 2rem 0;
   counter-increment: my-awesome-counter;
@@ -523,8 +508,8 @@ ol li::before {
   font-family: "Movement";
   font-weight: bold;
   content: counter(my-awesome-counter);
-  color: #ffffff;
-  font-size: 1rem;
+  color: var(--other-color);
+  font-size: var(--main-typo);
   font-weight: bold;
   position: absolute;
   --size: 32px;
@@ -545,7 +530,7 @@ ol li::before {
 .loading-titre1 {
   font-family: "Movement";
   text-align: center;
-  color: #ECFFB0;
+  color: var(--fruit-color);
   font-size: 1rem;
   padding-top: 4vw;
   padding-bottom: 2vw;
@@ -554,7 +539,7 @@ ol li::before {
 .loading-titre2 {
   font-family: "Movement";
   text-align: center;
-  color: #FFFFFF;
+  color: var(--other-color);
   font-size: 4rem;
   margin-bottom: 8vw;
 }
@@ -574,47 +559,64 @@ section {
   font-family: "Movement";
   text-align: center;
   text-decoration: none;
-  color: #191818;
+  color: var(--main-color);
   font-size: 0.75rem;
   padding: 1vw;
-  background-color: #ECFFB0;
+  margin-bottom: 2vw;
+  background-color: var(--fruit-color);
   border-radius: 50px;
   width: 10vw;
   font-weight: 700;
 }
 
 .bouton-loading:hover {
-  color: #191818;
+  color: var(--main-color);
   text-decoration: underline;
-  background-color: #E5D0E3;
+  background-color: var(--legume-color);;
 }
 
-.animated-box{
-  background-color:#4A4040;
-  width: 1em;
-  height: 1em;
-  margin-bottom: 10vw;
-  animation-duration: 3s;
-  animation-name: appearIn;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+.bouton-loading a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+.bouton-loading a:hover {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+.cercle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+}
+
+.cercle:nth-child(1){
 
 }
-@keyframes appearIn{
-  0% {
-    transition: all 1s ease;
-    transform: scale(1);
-    opacity: 1;
-  }
-  60% {
-    transform: scale(1.2) translateX(400px);
-    border-radius: 300px;
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1)translateX(800px) rotate(45deg);
-    border-radius: 0%;
 
+.cercle{
+  position: relative;
+}
+
+.cercle > * {
+  position: absolute;
+}
+
+svg:nth-child(1){
+  animation: twinning-1 10s linear infinite;
+}
+
+
+@keyframes twinning-1 {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
   }
 }
+
+
 /* Fin Loading page*/
