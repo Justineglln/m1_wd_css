@@ -490,7 +490,6 @@ ul {
 
 ul li {
   font-family: "Raleway";
-  font-weight: lighter;
   font-size: var(--main-typo);
   line-height: 1.4rem;
   position: relative;
@@ -508,7 +507,6 @@ ol {
 
 ol li {
   font-family: "Raleway";
-  font-weight: lighter;
   font-size: var(--main-typo);
   line-height: 1.4rem;
   margin: 0 0 2rem 0;
@@ -521,7 +519,6 @@ ol li::before {
   content: counter(my-awesome-counter);
   color: var(--other-color);
   font-size: var(--main-typo);
-  font-weight: bold;
   position: absolute;
   --size: 32px;
   left: calc(-1 * var(--size) - 8px);
