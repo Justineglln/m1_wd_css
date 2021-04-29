@@ -358,6 +358,7 @@ a[data-filter="legume"]:focus ~ #letter div:not([data-filter="legume"]){
 .footer {
   font-family: "Movement";
   padding: 20px;
+
   color: var(--other-color);
   display: flex;
   justify-content: center;
@@ -367,6 +368,7 @@ a[data-filter="legume"]:focus ~ #letter div:not([data-filter="legume"]){
 .marquee-rtl {
   overflow: hidden; /* important */
   width:100%;
+  height: auto;
 }
 .marquee-rtl > div {
   display: inline-block; /* important */
@@ -434,7 +436,8 @@ a[data-filter="legume"]:focus ~ #letter div:not([data-filter="legume"]){
 .body-container {
   color: var(--other-color);
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
+  height: 80vh;
   /* width: 100% */
 }
 
@@ -447,7 +450,20 @@ a[data-filter="legume"]:focus ~ #letter div:not([data-filter="legume"]){
 
 .images-cocktail {
   margin-right: 50px;
+  
   /* position: fixed; */
+}
+
+.images-cocktail img {
+
+  height: 450px;
+  /* position: fixed; */
+}
+
+.texte-cocktail{
+  height: 70vh;
+  overflow: scroll;
+  width: 50vw;
 }
 
 .texte-cocktail h1 {
@@ -488,10 +504,11 @@ ul li {
 
 
 ol {
-  max-width: 350px;
+  max-width: 900px;
   counter-reset: my-awesome-counter;
   list-style: none;
   padding-left: 40px;
+
 }
 
 ol li {
@@ -513,7 +530,7 @@ ol li::before {
   font-weight: bold;
   position: absolute;
   --size: 32px;
-  left: calc(-1 * var(--size) - 10px);
+  left: calc(-1 * var(--size) - 8px);
   line-height: var(--size);
   width: var(--size);
   height: var(--size);
@@ -527,6 +544,13 @@ ol li::before {
 
 
 /* Debut Loading page*/
+#container_hero_loading{
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+}
+
+
 .loading-titre1 {
   font-family: "Movement";
   text-align: center;
@@ -541,7 +565,7 @@ ol li::before {
   text-align: center;
   color: var(--other-color);
   font-size: 4rem;
-  margin-bottom: 8vw;
+  margin-bottom: 2vw;
 }
 
 section {
@@ -550,10 +574,6 @@ section {
   justify-content: center;
 }
 
-.bouton-container {
-  display: flex;
-  justify-content: center;
-}
 
 .bouton-loading {
   font-family: "Movement";
@@ -566,6 +586,7 @@ section {
   background-color: var(--fruit-color);
   border-radius: 50px;
   width: 10vw;
+  height: auto;
   font-weight: 700;
 }
 
@@ -586,22 +607,19 @@ section {
 }
 
 .cercle {
+  width: 150px;
+  height: auto;
+  margin-bottom: 2vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 150px;
 }
 
-.cercle:nth-child(1){
-
-}
-
-.cercle{
-  position: relative;
-}
-
-.cercle > * {
-  position: absolute;
+#container-animation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80VH;
 }
 
 svg:nth-child(1){
