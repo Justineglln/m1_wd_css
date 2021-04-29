@@ -349,8 +349,7 @@ a[data-filter="legume"]:focus ~ #letter div:not([data-filter="legume"]){
 #progress {
    animation-name: adjust-progressbar;
    animation-duration: 1s;
-   animation-timeline : progressbar-timeline;
-}
+ }
 /* fin barre de progession */
 
 /* Début Footer*/
@@ -450,7 +449,7 @@ a[data-filter="legume"]:focus ~ #letter div:not([data-filter="legume"]){
 
 .images-cocktail {
   margin-right: 50px;
-  
+
   /* position: fixed; */
 }
 
