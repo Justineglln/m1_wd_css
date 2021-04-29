@@ -30,7 +30,7 @@ body {
 
 .header h2 {
   font-family: "Movement";
-  font-weight: 700;
+  font-weight: 400;
   text-align: center;
   color: var(--other-color);
   font-size: 3rem;
@@ -39,7 +39,7 @@ body {
 
 .introduction p {
   font-family: "Movement";
-  font-weight: 700;
+  font-weight: 400;
   text-align: center;
   color: var(--other-color);
   font-size: var(--main-typo);
