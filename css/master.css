@@ -57,9 +57,9 @@ body {
   font-family: "Movement";
   margin: 0 auto;
   flex-basis: 1200px;
-  background-repeat: no-repeat;
   border-radius: 5%;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Début Filter */
@@ -133,7 +133,7 @@ main div{
 }
 
 main h3{
-font-weight: 700;
+font-weight: 400;
 font-size: 5rem;
 }
 
